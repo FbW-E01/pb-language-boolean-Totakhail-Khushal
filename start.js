@@ -1,0 +1,36 @@
+// # True or False ? 
+
+
+// #### 1. What type ? 
+// * Check whether`3` is equal to`"3"` using loose comparison.Then, check whether they are equal while using strict comparison. 
+
+console.log('Q1:', 3 == "3");
+console.log('Q2:', 3 === "3");    //stings are equal
+
+// ** Questions: Comment your answers in the js file.** 
+// * Is there a difference ? Why / why not ? 
+// * Which comparison operator should we generally use ? Why ?
+// * What would happen if we were to use`=` ?
+
+
+// #### 2. Not
+// * Store the value`true` to a variable.Using a ternary operator, print the`false` option by checking the value of the initial variable.
+
+const one = true;
+let turnaryoperator = (one !== true) ? "Its true" : " false";
+console.log(turnaryoperator);
+
+
+
+
+// #### 3. Short Circuit
+// Given the code below, what will print when when we console log`name` ? Comment your answer in the js file.
+
+
+let firstName, givenName;
+
+firstName = 'Stacey';
+let khushal = givenName || firstName || 'John';
+
+console.log(khushal);
+// the answer is stacey because givenname have no value.
